@@ -8,6 +8,7 @@ function addTodo() {
 		var li = document.createElement("li");
 		li.textContent= inputValue.value;
 		ol.appendChild(li);
+		inputValue.value="";
 	}
 }
 btn.addEventListener("click", addTodo);
